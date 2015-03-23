@@ -7,7 +7,7 @@
 		<!-- BASICS -->
         <meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Platinum Deal</title>
+        <title>Elite Capper</title>
         <meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />	
@@ -16,12 +16,26 @@
 		<link rel="stylesheet" href="css/bootstrap-theme.css">
         <link rel="stylesheet" href="css/style.css">
 
+
+
+
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<!-- skin -->
 		<link rel="stylesheet" href="skin/default.css">
 		<style>
 			h1,h2,h3,h4 {
 				font-weight: lighter;
+			}
+			.align-center img {
+				max-width: 500px;
+				margin-top: 50px;
+				margin-bottom: 20px
+			}
+			.align-center p {
+				font-size: 1.5em;
+			}
+			.align-center h1,h2 {
+				line-height: 1.2em;
 			}
 		</style>
     </head>
@@ -36,8 +50,9 @@
 						
 						<div class="align-center">
 
-							<i class="fa fa-connectdevelop fa-5x" style="margin-bottom: 50px"></i>
-							<h2 class="slogan">Добро пожаловать на уникальный сервис Platinum Deal</h2>
+							<img src="img/logo.jpg">
+
+							<h2 class="slogan">Добро пожаловать на уникальный сервис Elite Capper</h2>
 							<p>
 							Существует множество организаций, которые предлагают свои услуги по предоставлению информации о
 								результатах разнообразных матчей. Причем, что интересно, все они дают гарантию на правильность своих рассчетов.
@@ -84,41 +99,58 @@
 			</div>
 		</section>
 		<!-- services -->
-		<section id="section-works" class="section pad-bot30 bg-white">
-		<div class="container"> 
-		
-			<div class="row mar-bot40">
-				<div class="col-lg-4" >
-					<div class="align-center">
-						<i class="fa fa-code fa-5x mar-bot20"></i>
-						<h4>Отсутсвие комиссии</h4>
-						<p>
-							Тотальное отсутствие комисси с вашего выйгрыша! Никогда не было и не будет!
-						</p>
-					</div>
-				</div>
-					
-				<div class="col-lg-4" >
-					<div class="align-center">
-						<i class="fa fa-terminal fa-5x mar-bot20"></i>
-						<h4 class="">Индивидуальность</h4>
-						<p>Широкий выбор и вариативность экспресс ставок! Индивидуальный подход к каждой заявке.
-						</p>
-					</div>
-				</div>
-			
-				<div class="col-lg-4" >
-					<div class="align-center">
-						<i class="fa fa-bolt fa-5x mar-bot20"></i>
-						<h4 class="">Минимизация затрат</h4>
-						<p>Ввиду высоких коэффицентов, вы получаете возможность ставить меньшие суммы!
-						</p>
-					</div>
-				</div>
-			
-			</div>	
 
-		</div>
+
+		<section id="section-works" class="section appear clearfix">
+			<div class="container">
+
+				<div class="row mar-bot40">
+					<div class="col-md-offset-3 col-md-6">
+						<div class="section-header">
+							<div class="row mar-bot40">
+								<div class="col-lg-11 col-centered">
+									<div class="align-center">
+										<img class="" style="max-width: 500px" src="img/medal.png">
+										<h1>Лидирующая позиция на рынке Договоных матчей</h1>
+										<p>
+											Тотальное отсутствие комисси с вашего выйгрыша! Никогда не было и не будет!
+										</p>
+									</div>
+								</div>
+
+
+
+							</div>
+
+							<div class="row">
+								<div class="col-lg-11 col-centered">
+									<div class="align-center">
+										<img class="" style="" src="img/shield.png">
+										<h1>Индивидуальность</h1>
+										<p>Широкий выбор и вариативность экспресс ставок! Индивидуальный подход к каждой заявке.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-lg-11 col-centered">
+									<div class="align-center">
+										<img class="" style="max-width: 500px; padding-bottom: 20px" src="img/certificate.png">
+										<h1>Индивидуальность</h1>
+										<p>Широкий выбор и вариативность экспресс ставок! Индивидуальный подход к каждой заявке.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+			</div>
 		</section>
 			
 		<!-- about -->
@@ -206,5 +238,36 @@
 	<script src="js/stellar.js"></script>
 	<script src="js/jquery.appear.js"></script>
 	<script src="js/validate.js"></script>
+		<!-- Important Owl stylesheet -->
+		<link rel="stylesheet" href="css/owl.carousel.css">
+
+		<!-- Default Theme -->
+		<link rel="stylesheet" href="css/owl.theme.css">
+
+		<!--  jQuery 1.7+  -->
+
+		<!-- Include js plugin -->
+		<script src="js/owl.carousel.js"></script>
+
+
+		<script>
+			$(document).ready(function() {
+
+				$("#owl-example").owlCarousel({
+					slideSpeed : 300,
+					paginationSpeed : 400,
+					singleItem:true,
+					autoPlay: 3000 //Set AutoPlay to 3 seconds
+
+					// "singleItem:true" is a shortcut for:
+					// items : 1,
+					// itemsDesktop : false,
+					// itemsDesktopSmall : false,
+					// itemsTablet: false,
+					// itemsMobile : false
+				});
+
+			});
+		</script>
 	</body>
 </html>

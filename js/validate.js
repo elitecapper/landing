@@ -79,8 +79,8 @@ jQuery(document).ready(function($) {
 		if( ferror ) return false; 
 			else var str = $(this).serialize();		
 				$.ajax({
-				type: "GET",
-				url: "http://platinumdeal.byethost13.com/register.php",
+				type: "post",
+				url: "http://elitecapper.byethost14.com/addcustomer.php",
 				data: str
 				});
 				$("#sendmessage").addClass("show");

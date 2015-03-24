@@ -31,52 +31,92 @@
 				margin-top: 50px;
 				margin-bottom: 20px
 			}
-			.align-center > #logo {
-				max-width: 25em;
-			}
 			.align-center p {
 				font-size: 1.5em;
 			}
 			.align-center h1,h2 {
 				line-height: 1.2em;
 			}
+			.img-responsive {
+				display: block;
+				max-height: 100%;
+				min-width: 100%;
+			}
+			#explore {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				/* bring your own prefixes */
+				transform: translate(-50%, -50%);
+				width: 30em;
+				height: 10em;
+				border: 3px solid white;
+				z-index: 90000;
+				text-align: center;
+				background: rgba(0,0,0,0.3);
+				transition: background .3s ease-in-out;
+				border-radius: 10px;
+			}
+			#explore:hover {
+				transition: background .3s ease-in-out;
+				background: rgba(0,0,0,1);
+			}
+			#explore h4 {
+				color: white;
+				font-size: 8em;
+				font-weight: 100;
+			}
+			#owl-demo {
+				z-index: -9000;
+			}
 		</style>
     </head>
 	 
     <body>
 
+		<section class=" appear ">
+			<div id="explore">
+				<h4>Войти</h4>
+			</div>
 
-		<section class="featured">
-			<div class="container"> 
-				<div class="row mar-bot40">
-					<div class="col-md-6 col-md-offset-3">
-						
-						<div class="align-center">
+			<div id="owl-demo" class="owl-carousel owl-theme">
 
-							<img src="img/logo.png" id="logo">
+				<div class="item"><img src="img/soccer.jpg" alt="The Last of us" class="img-responsive"></div>
+				<div class="item"><img src="img/hokkey.jpg" alt="The Last of us" class="img-responsive"></div>
+				<div class="item"><img src="img/tennis.jpg" alt="The Last of us" class="img-responsive"></div>
+				<div class="item"><img src="img/basketball.jpg" alt="The Last of us" class="img-responsive"></div>
 
-							<h2 class="slogan">Добро пожаловать на уникальный сервис Elite Capper</h2>
-							<p>
+			</div>
+		</section>
+		<section id="main">
+			<div class="row mar-bot40">
+				<div class="col-md-6 col-md-offset-3">
+
+					<div class="align-center">
+
+						<img src="img/logo.png" id="logo" style="max-width: 25em;">
+
+						<h2 class="slogan">Добро пожаловать на уникальный сервис Elite Capper</h2>
+						<p>
 							Существует множество организаций, которые предлагают свои услуги по предоставлению информации о
-								результатах разнообразных матчей. Причем, что интересно, все они дают гарантию на правильность своих рассчетов.
-								Однако, если брать в рассчет безумно низкие коэффиценты, на которые они нацелены, и
-								весьма приличный процент ошибок таких компаний, действительно ли вы хотите рисковать вашими деньгами,
-								когда возможная прибыль не столь высока?
-								<br>
-							</p>
+							результатах разнообразных матчей. Причем, что интересно, все они дают гарантию на правильность своих рассчетов.
+							Однако, если брать в рассчет безумно низкие коэффиценты, на которые они нацелены, и
+							весьма приличный процент ошибок таких компаний, действительно ли вы хотите рисковать вашими деньгами,
+							когда возможная прибыль не столь высока?
 							<br>
-							<p style="font-size: 1.5em">
-								Мы предлагаем другой подход.
-							</p>
-						</div>
+						</p>
+						<br>
+						<p style="font-size: 1.5em">
+							Мы предлагаем другой подход.
+						</p>
 					</div>
 				</div>
 			</div>
+
 		</section>
 
 		<section id="section-about" class="section appear clearfix">
 			<div class="container">
-
 				<div class="row mar-bot40">
 					<div class="col-md-offset-3 col-md-6">
 						<div class="section-header">
@@ -89,29 +129,22 @@
 								Следуя данной концепции, вы получаете возможность рисковать меньшей суммой денег не в убыток выйгрышу, как правило наоборот заметно повышая свою прибыль!
 							</p>
 
-							<p>
-
-							</p>
 						</div>
 					</div>
 				</div>
-
-
-				</div>
-
 			</div>
+
 		</section>
 		<!-- services -->
+
+		<!-- spacer section:stats -->
+
 
 
 		<section id="section-works" class="section appear clearfix">
 			<div class="container">
 
-				<div class="row mar-bot40">
-					<div class="col-md-offset-3 col-md-6">
-						<div class="section-header">
-							<div class="row mar-bot40">
-								<div class="col-lg-11 col-centered">
+							<div class="row">
 									<div class="align-center">
 										<img class="" style="" src="img/medal.png">
 										<h1>Лидирующая позиция на рынке Договоных матчей</h1>
@@ -119,62 +152,40 @@
 											Тотальное отсутствие комисси с вашего выйгрыша! Никогда не было и не будет!
 										</p>
 									</div>
-								</div>
-
-
-
 							</div>
 
 							<div class="row">
-								<div class="col-lg-11 col-centered">
 									<div class="align-center">
 										<img class="" style="" src="img/shield.png">
 										<h1>Индивидуальность</h1>
 										<p>Широкий выбор и вариативность экспресс ставок! Индивидуальный подход к каждой заявке.
 										</p>
 									</div>
-								</div>
 							</div>
 
 							<div class="row">
-								<div class="col-lg-11 col-centered">
 									<div class="align-center">
 										<img class="" style="" src="img/certificate.png">
 										<h1>Индивидуальность</h1>
 										<p>Широкий выбор и вариативность экспресс ставок! Индивидуальный подход к каждой заявке.
 										</p>
 									</div>
-								</div>
 							</div>
 						</div>
-					</div>
-				</div>
 
 
 			</div>
 
-			</div>
 		</section>
 			
 		<!-- about -->
 
 		<!-- /about -->
 		
-		<!-- spacer section:stats -->
-		<section id="parallax1" class="section pad-top40 pad-bot40" data-stellar-background-ratio="0.5">
-			<div class="container">
-				<div class="align-center pad-top40 pad-bot40">
-					<blockquote class="bigquote color-white">Мы верим, что именно человек чувствует спорт</blockquote>
-					<p class="color-white">Все экспресс ставки подбираются реальными людьми</p>
-				</div>
-			</div>	
-		</section>
-		
 
 		<!-- contact -->
 		<section id="section-contact" class="section appear clearfix">
 			<div class="container">
-				
 				<div class="row mar-bot40">
 					<div class="col-md-offset-3 col-md-6">
 						<div class="section-header">
@@ -232,7 +243,6 @@
 		</div>
 
 	</section>
-	<a href="#header" class="scrollup"><i class="fa fa-chevron-up"></i></a>
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery.easing.1.3.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -254,23 +264,46 @@
 
 
 		<script>
-			$(document).ready(function() {
+			$('.owl-carousel').owlCarousel({
+				loop:true,
+				margin:10,
+				autoPlay: 5000,
+				slideSpeed : 1000,
+				paginationSpeed : 1000,
+				singleItem:true
 
-				$("#owl-example").owlCarousel({
-					slideSpeed : 300,
-					paginationSpeed : 400,
-					singleItem:true,
-					autoPlay: 3000 //Set AutoPlay to 3 seconds
-
-					// "singleItem:true" is a shortcut for:
-					// items : 1,
-					// itemsDesktop : false,
-					// itemsDesktopSmall : false,
-					// itemsTablet: false,
-					// itemsMobile : false
-				});
-
+				// "singleItem:true" is a shortcut for:
+				// items : 1,
+				// itemsDesktop : false,
+				// itemsDesktopSmall : false,
+				// itemsTablet: false,
+				// itemsMobile : false
 			});
+			$.extend($.scrollTo.defaults, {
+				axis: 'y',
+				duration: 800
+			});
+		</script>
+		<script>
+			$(function() {
+				function notify() {
+					$(this).fadeOut(1000);
+					setTimeout(function(){
+						$('body').scrollTo('#main');
+					}, 1000);
+
+				}
+				$( "#explore" ).on( "click", notify );
+			});
+		</script>
+		<script type="text/javascript">
+			var mobile = (/iphone|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+			if (mobile) {
+				$('#explore').hide();
+			}
+			else
+			{
+			}
 		</script>
 	</body>
 </html>
